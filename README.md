@@ -11,7 +11,7 @@ For nltk enter this line in Bash:
 Test installation:
     python
 
-the type
+then type
     import nltk
 
 ## 
