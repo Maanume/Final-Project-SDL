@@ -1,9 +1,10 @@
-# My Software Design Lab Final Project
+# My Final Project - Software Design Lab
 My final project removes words from a text file using the stopword list from the NLTK package in Python. This project also shows you how to add additional words to the stopword list in Python. 
 
 ## Installation
 If you do not have anaconda or nltk installed on your computer follow the steps below.
-For anaconda go to this link and click download. 
+
+For anaconda go to this [link] (https://www.anaconda.com/products/individual), click download and then find the lin that will work for your specifc system. 
 
 For nltk enter this line in Bash:
 
