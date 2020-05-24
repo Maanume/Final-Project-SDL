@@ -4,7 +4,7 @@ My final project removes words from a text file using the stopword list from the
 ## Installation
 If you do not have anaconda or nltk installed on your computer follow the steps below.
 
-For anaconda go to this [link](https://www.anaconda.com/products/individual), click download and then find the lin that will work for your specifc system. 
+For anaconda go to this [link](https://www.anaconda.com/products/individual), click download and then find the link that will work for your specific system. 
 
 For nltk enter this line in Bash:
 
