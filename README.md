@@ -9,14 +9,25 @@ For nltk enter this line in Bash:
 
     pip install --user -U nltk
 
-Test installation:
+Test installation by typing:
     
     python
 
-then type
+then
     
     import nltk
 
-## 
+## Usage
+To run the project, start with this line in Bash:
+
+    import nltk 
+    from nltk.corpus import stopwords
+    from nltk.tokenize import word_tokenize
+
+The first two lines of code imports in the nltk library and then imports the stopwords folder. The next line breaks down the text file into words.
+
+Next you need to define the stopword list:
+
+    stop_words = nltk.corpus.stopwords.words('english')
 
 
