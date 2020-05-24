@@ -35,7 +35,7 @@ If you wish to add additional stop words, use the code below. Put additional wor
     New_stopwords = ["NEW_STOPWORD1", "NEW_STOPWORD2"]
     stop_words.extend(New_stopwords)
 
-Next you need to add the text file and tell the computer to read it. The last splits a string into a list.
+Next you need to add the text file. The second line tell the computer to read it. The last line splits a string (the text file) into a list.
 
     txt_file = open("text1.txt")
     txt_line = txt_file.read()
@@ -67,27 +67,28 @@ Finally, the next two lines of code with print the number of stop words found an
 The full code is below:
 
     import nltk 
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
- #stop_words = set(stopwords.words('english'))
-stop_words = nltk.corpus.stopwords.words('english')
-#stopwords.append('employment')
-New_stopwords = ["employment", "post-war"]
-stop_words.extend(New_stopwords)
+    from nltk.corpus import stopwords
+    from nltk.tokenize import word_tokenize
 
-txt_file = open("text1.txt")
-txt_line = txt_file.read()
-txt_words = txt_line.split()
+    stop_words = nltk.corpus.stopwords.words('english')
 
-sw_found = 0 
+    New_stopwords = ["NEW_STOPWORD1", "NEW_STOPWORD2"]
+    stop_words.extend(New_stopwords)
 
-for check_word in txt_words:
-    if not check_word.lower() in stop_words:
-        appendFile = open('stopwords-removed.txt', 'a')
-        appendFile.write(" "+check_word)
-        appendFile.close()
-    else:
-        sw_found +=1
-        print(check_word)
-print(sw_found, "stop words found and removed")
-print("Saved as 'stopwords-removed.txt'")
+    txt_file = open("text1.txt")
+    txt_line = txt_file.read()
+    txt_words = txt_line.split()
+
+    sw_found = 0 
+
+    for check_word in txt_words:
+        if not check_word.lower() in stop_words:
+            appendFile = open('stopwords-removed.txt', 'a')
+            appendFile.write(" "+check_word)
+            appendFile.close()
+        else:
+            sw_found +=1
+            print(check_word)
+    
+    print(sw_found, "stop words found and removed")
+    print("Saved as 'stopwords-removed.txt'")
