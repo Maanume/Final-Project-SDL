@@ -7,21 +7,15 @@ For anaconda go to this link and click download.
 
 For nltk enter this line in Bash:
 
-    '''
     pip install --user -U nltk
-    '''
 
 Test installation:
     
-    '''
     python
-    '''
 
 then type
     
-    '''
     import nltk
-    '''
 
 ## 
 
